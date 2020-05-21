@@ -3,24 +3,21 @@ programa
 	
 	funcao inicio()
 	{
-		// inteiro, real
-		caracter umaLetra;
-		cadeia nome;
+		inteiro soma1=0, soma2=0, soma3=0
+		inteiro num
+		
+		para(inteiro i=1; i<=10; i++){
 
-		escreva("Digite uma letra: ")
-		leia(umaLetra)
+			escreva(i+" - Digite um número:")
+			leia(num)
 
-		escreva("Digite o seu nome: ")
-		leia(nome)
-
-		se(umaLetra == 'a' ou umaLetra == 'A'){
-			escreva(umaLetra)
+			se(i<=5){
+				soma1 = soma1 + num
+			}
+			
 		}
 
-		escreva("Olá "+ nome + " você digitou a letra: "+umaLetra)
-		
-		
-				  
+		escreva(soma1)
 		
 	}
 }
@@ -29,8 +26,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 281; 
- * @PONTOS-DE-PARADA = ;
+ * @POSICAO-CURSOR = 212; 
+ * @PONTOS-DE-PARADA = 12;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
